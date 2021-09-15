@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
 import axios from "axios";
-import pdf from "../../Assets/Soumyajit-Behera.pdf";
+import pdf from "../../Assets/Cv-Gabriel-Delgadillo-en.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
 function Resume() {
@@ -32,6 +32,7 @@ function Resume() {
     <Container fluid className="resume-section">
       <Particle />
       <Container>
+        If you don't mind😄...
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button variant="primary" href={pdf} target="_blank">
             <AiOutlineDownload />
@@ -42,52 +43,76 @@ function Resume() {
           <Col md={6} className="resume-left">
             <h3 className="resume-title">Experience</h3>
             <Resumecontent
-              title="Frontend Developer Intern [Flash Tech]"
-              date="July 2021 - September 2021"
+              title="Full Stack Project [Henry]"
+              date="September 2021 - Today"
               content={[
-                "Worked on the development of an E-commerce website",
-                "Redesigned Wigme.com and created features to enhance the user experience and optimized designs for smartphones.",
-                " Translated designs and wireframes into a highly responsive user interface and reusable components using React.js.",
+                "Worked on the development of an website for getting consultations in a hospital",
+                " Translated designs and wireframes into a responsive user interface and reusable components using React.js.",
                 "Used Back-End APIs to display data using the Custom Components, library Components, and Redux.",
-                "Used JIRA as the bug tracking system to track and maintain the history of bugs/issues on an everyday basis.",
+                "Used JIRA on an everyday basis for the design and development.",
+                "Constant use of agile methodologies such as scrum",
               ]}
             />
-            <h3 className="resume-title">Extracurricular Activities</h3>
             <Resumecontent
-              title="Web Developer [Pantheon-2019 Technical Fest of BIT Mesra]"
+              title="Personal Full Stack Project"
+              date="September 2021 - Today"
               content={[
-                "Worked on building front-end UI design using HTML5, CSS3, JavaScript jQuery, and building API routes using Node and express.js.",
+                "Design and implement a website where the user can view, search and make their own dog breeds",
+                "Manage the backend with nodeJs and express",
+                "Manage the frontend with react, redux and css(without libreries)",
               ]}
             />
+            <Resumecontent
+              title="Teaching assistant [Henry]"
+              date="August 2021 - Today"
+              content={[
+                "Coordination an student assistence during their journey on the bootcamp (16 students)",
+                "Planification and development of activities, resolution of doubts",
+                "Schedule:JavaScript, React, Node, Express, PostgreSQL, Sequelize, among others",
+              ]}
+            />
+            
           </Col>
           <Col md={6} className="resume-right">
             <h3 className="resume-title">Education</h3>
             <Resumecontent
-              title="IMSC MATHS AND COMPUTING [BIT Mesra, Ranchi] "
-              date="2018 - Present"
-              content={[`CGPA: ${cgpa} (Till ${sem}th Sem)`]}
-            />
-
-            <h3 className="resume-title">Publications</h3>
-            <Resumecontent
-              title=""
+              title="Bachelor's degree in computing [Unlp Informatica, La Plata] "
+              date="2016 - Present"
               content={[
-                "Article entitled An Overlapping Sliding Window and Combined Feature based Emotion Recognition System for EEG Signals publised in Emerald Publication;10.1108/ACI-05-2021-0130",
+                "Object oriented programming",
+                "Fundamentals in data structures and algorithms",
+                "Mathematics oriented to logic and probabilities",
+              ]}
+            />
+            <Resumecontent
+              title="Full Stack Developer [Henry] "
+              date="2021 - Present"
+              content={[
+                "Over 700 hours of theoretical/practical course",
+                "Training in tecnologies front-end and backend",
+              ]}
+            />
+            <Resumecontent
+              title="Technician [Ace institute] "
+              date="2020"
+              content={[
+                "Formation in assembly and repair of pc and networks",
+              ]}
+            />
+            <Resumecontent
+              title="German (basic)[University language center]"
+              date="August 2019 - May 2020"
+              content={[
+                "Basic formation of the german lenguage with phonetic and vocabulary practices",
               ]}
             />
 
-            <h3 className="resume-title">Ranks and Achivements</h3>
-            <Resumecontent
-              title=""
-              content={[
-                `Current rank in Spoj ${spojRank}`,
-                `Current rank in HackerRank  ${hackerrank}`,
-                "Top Performer in Code-Break 1.0",
-                "Participant in Hack-A-Bit 2019",
-              ]}
-            />
+            
+
+            
           </Col>
         </Row>
+        If you are interested🙂...
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button variant="primary" href={pdf} target="_blank">
             <AiOutlineDownload />
