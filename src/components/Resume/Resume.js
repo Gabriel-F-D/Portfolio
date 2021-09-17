@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
@@ -8,21 +8,7 @@ import pdf from "../../Assets/Cv-Gabriel-Delgadillo-en.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
 function Resume() {
-  const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
 
-  useEffect(() => {
-    axios
-      .get(uri)
-      .then((res) => {
-        upadteSpojRank(res.data.message[0].spojRank);
-        upadteHackerank(res.data.message[1].hackerrank);
-        upadteCgpa(res.data.message[2].cgpa);
-        upadateSem(res.data.message[3].sem);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
 
   return (
     <Container fluid className="resume-section">
