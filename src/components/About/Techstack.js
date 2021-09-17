@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
@@ -8,9 +7,8 @@ import {
   DiMongodb,
   DiPostgresql,
   DiCodepen,
-  DiGit,
 } from "react-icons/di";
-import { SiPytorch, SiTensorflow, SiFirebase, SiRedux } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
 
 function Techstack() {
   return (
