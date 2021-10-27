@@ -6,6 +6,7 @@ import Particle from "../Particle";
 import doggo from "../../Assets/Projects/doggo.png";
 import MdPrev from "../../Assets/Projects/MdPrev.png";
 import weather from "../../Assets/Projects/weather.png";
+import Rick from "../../Assets/Projects/Rick.png"
 
 function Projects() {
   return (
@@ -36,6 +37,16 @@ function Projects() {
               title="Weather app"
               description="Website build with React and tailwind, it makes an api request of the current weather each time the user types a city in the input."
               link="https://github.com/Gabriel-F-D/weather-app"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Rick}
+              isBlog={false}
+              title="Rick and Morty app"
+              description="Website build with React/Redux and stiled components, it makes an api request of characters, episodes and locations to the Rick and morty api"
+              link="https://github.com/Gabriel-F-D/rick-app"
             />
           </Col>
 
